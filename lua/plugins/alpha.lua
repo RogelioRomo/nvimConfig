@@ -6,55 +6,45 @@ return {
 
 	config = function()
 		local alpha = require("alpha")
-		local dashboard = require("alpha.themes.dashboard")
+	  	local dashboard = require("alpha.themes.dashboard")
 
-		--		dashboard.section.header.val = {
-		--			[[                                                                       ]],
-		--			[[                                                                       ]],
-		--			[[                                                                       ]],
-		--			[[                                                                       ]],
-		--			[[                                                                     ]],
-		--			[[       ████ ██████           █████      ██                     ]],
-		--			[[      ███████████             █████                             ]],
-		--			[[      █████████ ███████████████████ ███   ███████████   ]],
-		--			[[     █████████  ███    █████████████ █████ ██████████████   ]],
-		--			[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
-		--			[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
-		--			[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
-		--			[[                                                                       ]],
-		--			[[                                                                       ]],
-		--			[[                                                                       ]],
-		--   }
 		dashboard.section.header.val = {
 			"",
-			"      ⠀ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ",
-			"⠀      ⠀⠀⠀⠀⠀⠀⢀⣠⡴⠾⠛⠋⠉⠉⠉⠉⠙⠛⠷⢦⣄⡀⠀⠀⠀⠀⠀⠀  ",
-			"⠀⠀      ⠀⠀⠀⣠⣴⠟⢁⣠⠖⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⣄⠀⠀⠀⠀⠀  ",
-			"⠀⠀   ⠀   ⢀⣼⠟⠁⣰⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣧⡀⠀⠀⠀  ",
-			"   ⠀   ⠀⢀⡾⠁⢠⣾⡟⠁⠀⠀⠀⣠⣾⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠈⢷⡀⠀⠀ ",
-			"      ⠀⢀⣾⠁⣠⣿⠏⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠈⣷⡀	",
-			"      ⠀⢸⡇⠀⣿⠏⠀⠀⢀⣴⣷⡀⠻⣿⣿⣿⣿⠟⢀⣾⣦⡀⠀⠀⠀⠀⠀⢸⡇⠀",
-			"⠀      ⢸⡇⠀⠀⠀⠀⠀⢸⣿⣿⣿⣦⣤⠈⠁⣤⣴⣿⣿⣿⡇⠀⠀⠀⢰⠃⢸⡇⠀",
-			"⠀      ⠈⢿⡀⠀⠀⠀⠀⠀⠻⠿⡿⠿⠃⠀⠀⠘⠿⢿⠿⠟⠀⠀⠀⡰⠟⢀⡿⠁⠀",
-			"⠀⠀      ⠈⢿⣤⡀⠀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣀⠀⢀⣤⡿⠁⠀⠀",
-			"⠀⠀⠀      ⠀⠉⠛⠛⠋⣡⣤⣌⠙⠻⠶⣦⣴⠶⠟⠋⣡⣤⣌⠙⠛⠛⠉⠀⠀⠀	",
-			"⠀⠀⠀⠀⠀      ⠀⠀⣾⣿⣿⣿⢀⣴⣶⠄⠠⣶⣦⡀⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀	",
-			"⠀⠀⠀⠀⠀⠀      ⠀⢿⣿⣿⡏⠈⢿⣿⠀⠀⣿⡿⠁⢹⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀ ",
-			"⠀⠀⠀⠀⠀⠀⠀      ⠈⠻⣿⣿⠀⠀⠉⠀⠀⠉⠀⠀⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀ 	",
-			"⠀⠀⠀⠀⠀⠀⠀⠀        ⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  	",
+			"      ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ",
+			"     ⠀⠀⠀⠀⠀⠀⢀⣠⡴⠾⠛⠋⠉⠉⠉⠉⠙⠛⠷⢦⣄⡀⠀⠀⠀⠀⠀⠀  ",
+			"      ⠀⠀⠀⣠⣴⠟⢁⣠⠖⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣦⣄⠀⠀⠀⠀⠀  ",
+			"⠀      ⢀⣼⠟⠁⣰⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣧⡀⠀⠀⠀  ",
+			"     ⠀⢀⡾⠁⢠⣾⡟⠁⠀⠀⠀⣠⣾⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠈⢷⡀⠀⠀ ",
+			"    ⠀⢀⣾⠁⣠⣿⠏⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠈⣷⡀	",
+			"    ⠀⢸⡇⠀⣿⠏⠀⠀⢀⣴⣷⡀⠻⣿⣿⣿⣿⠟⢀⣾⣦⡀⠀⠀⠀⠀⠀⢸⡇⠀",
+			"     ⢸⡇⠀⠀⠀⠀⠀⢸⣿⣿⣿⣦⣤⠈⠁⣤⣴⣿⣿⣿⡇⠀⠀⠀⢰⠃⢸⡇⠀",
+			"     ⠈⢿⡀⠀⠀⠀⠀⠀⠻⠿⡿⠿⠃⠀⠀⠘⠿⢿⠿⠟⠀⠀⠀⡰⠟⢀⡿⠁⠀",
+			"      ⠈⢿⣤⡀⠀⣀⣤⣤⣤⣀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣀⠀⢀⣤⡿⠁⠀⠀",
+			"⠀      ⠀⠉⠛⠛⠋⣡⣤⣌⠙⠻⠶⣦⣴⠶⠟⠋⣡⣤⣌⠙⠛⠛⠉⠀⠀⠀	",
+			"⠀⠀⠀      ⠀⠀⣾⣿⣿⣿⢀⣴⣶⠄⠠⣶⣦⡀⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀	",
+			"⠀⠀⠀⠀      ⠀⢿⣿⣿⡏⠈⢿⣿⠀⠀⣿⡿⠁⢹⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀ ",
+			"⠀⠀⠀⠀⠀      ⠈⠻⣿⣿⠀⠀⠉⠀⠀⠉⠀⠀⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀ 	",
+			"⠀⠀⠀⠀⠀⠀        ⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  	",
 			"",
 		}
-
-		--dashboard.section.buttons.val = {
-		--dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
-		--dashboard.button("f", "󰱼  > Find file", ":cd $HOME/Workspace | Telescope find_files<CR>"),
-		--dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
-		--dashboard.button("s", "  > Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
-		--dashboard.button("q", "󰅚  > Quit NVIM", ":qa<CR>"),
-		--}
+		dashboard.section.text = {
+			type = "text",
+			val = {
+				"Rogelio Romo",
+			},
+			opts = {
+				position = "center",
+				hl = "Comment",
+			},
+		}
+		dashboard.section.buttons.val = {
+			-- dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
+			-- dashboard.button("f", "󰱼  > Find file", ":cd $HOME/Workspace | Telescope find_files<CR>"),
+			-- dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
+			-- dashboard.button("s", "  > Settings", ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
+			-- dashboard.button("q", "󰅚  > Quit NVIM", ":qa<CR>"),
+		}
 		dashboard.section.footer.val = {
-			[[                                                                       ]],
-			[[                                                                       ]],
 			[[                                                                       ]],
 			[[                                                                       ]],
 			[[                                                                     ]],
@@ -70,6 +60,15 @@ return {
 			[[                                                                       ]],
 		}
 
-		alpha.setup(dashboard.opts)
+		--alpha.setup(dashboard.opts)
+		alpha.setup({
+			layout = {
+				dashboard.section.header,
+				dashboard.section.text,  -- Add the new section here
+				dashboard.section.buttons,
+				dashboard.section.footer,
+			},
+			opts = {},
+		})
 	end,
 }
